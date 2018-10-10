@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="left-section">
+            <h2>IO <span class="header-logo">Technologies</span></h2>
+            <p>Get how-to help and instructions or specific features in</p>
+            <div class="buttom-group">
+                <button type="button">HELP CENTER</button>
+                <span>or</span>
+                <button type="button">SUPPORT</button>
+            </div>
+        </div>
+
+        <div class="right-section">
+
+            <div id="welcome-state">
+                <h1>Welcome back</h1>
+                <p>Sign in to continue to IO Technologies</p>
+                <form>
+                    <div class="container">
+                        <div id="message-block" class="hide"></div>
+                    </div>
+                    <input id="welcom-email-input" class="primary" type="text" name="email" autocomplete="off" placeholder="Your email:">
+                    <input id="welcome-password-input" class="primary" type="text" name="password" autocomplete="off" placeholder="Password:">
+                    <button id="log-in-btn" type="button">log in </button>
+                </form>
+                <p>Forgot your password? <a href="#" id="reset">Reset</a></p>
+            </div>
+
+            <div id="forgot-state" class="hide">
+                <a class="return-arrow" href="#">&#8592</a>
+                <h1 class="indent">Forgot password</h1>
+                <form>
+                    <input id="forgot-email-input" class="primary email" type="text" name="email" autocomplete="off" placeholder="Enter your email:">
+                    <button id="instructions-btn" type="button">send me instructions</button>
+                </form>
+            </div>
+
+            <div id="greeting-state" class="hide">
+                <h1 id="name-block"></h1>
+                <p class="indent">Please choose your project</p>
+                <div id="projects-block">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="./js/login-controller.js"></script>
+    <script src="./js/login-model.js"></script>
+    <script src="./js/login-view.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
